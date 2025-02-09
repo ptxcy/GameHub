@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GameHub</title>
+        <style>
+            body {
+                background-image: url("./images/GameHubBackground.png");
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .headline {
+                color: #3500D3;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 75px;
+                text-align: center;
+                margin: 0;
+            }
+
+            .GameContainer {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                align-items: center;
+                justify-items: center;
+                width: 80vw;
+                height: 80vh;
+                margin-top: 20px;
+            }
+
+            .Game {
+                border: 5px solid #3500D3;
+                border-radius: 50px;
+                color: #3500D3;
+                font-size: 24px;
+                height: 80%;
+                width: 80%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: transparent;
+            }
+        </style>
+    </head>
+    <body id="body">
+    <div>
+        <div>
+            <h1 class="headline">Game Hub</h1>
+        </div>
+
+        <div class="GameContainer">
+            <div class="Game"></div>
+            <div class="Game"></div>
+            <div class="Game"></div>
+
+            <div class="Game"></div>
+            <div class="Game"></div>
+            <div class="Game"></div>
+
+            <div class="Game"></div>
+            <div class="Game"></div>
+            <div class="Game"></div>
+        </div>
+    </div>
+    </body>
+    <script type="module" src="./js/LoadGames.js"></script>
+    </html>
